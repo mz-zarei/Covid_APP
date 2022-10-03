@@ -11,11 +11,11 @@ The dataset contains positive and negative classes to indicate the positive and 
 ![negative samples](figures/nocovid.png)
 
 # Technical Concepts in Model development
-    - **Data Loader**: Since all data couldn't be loaded into memory, data loaders from pytorch are used. A data loader combines a dataset and a sampler, and provides an iterable over the given dataset. 
-    - **Mixup Data Augmentation**: mixup is a domain-agnostic data augmentation technique proposed in mixup: Beyond Empirical Risk Minimization by Zhang et al. It's implemented with the following formulas:
+- **Data Loader**: Since all data couldn't be loaded into memory, data loaders from pytorch are used. A data loader combines a dataset and a sampler, and provides an iterable over the given dataset. 
+- **Mixup Data Augmentation**: mixup is a domain-agnostic data augmentation technique proposed in mixup: Beyond Empirical Risk Minimization by Zhang et al. It's implemented with the following formulas:
 ![mixup formula](figures/mixup.png)
-    (Note that the lambda values are values with the [0, 1] range and are sampled from the Beta distribution.)
-    - **Transfer Learning**: It is a popular approach in deep learning where pre-trained models are used as the starting point on computer vision and natural language processing tasks given the vast compute and time resources required to develop neural network models on these problems and from the huge jumps in skill that they provide on related problems.
+(Note that the lambda values are values with the [0, 1] range and are sampled from the Beta distribution.)
+- **Transfer Learning**: It is a popular approach in deep learning where pre-trained models are used as the starting point on computer vision and natural language processing tasks given the vast compute and time resources required to develop neural network models on these problems and from the huge jumps in skill that they provide on related problems.
 
 
 
