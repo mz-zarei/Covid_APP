@@ -17,7 +17,7 @@ The dataset contains positive and negative classes to indicate the positive and 
 3. Go to the jupyter notebooks folder in my repo, right click the notebook you want to open and select Open with **Google Colab**
 4. Activate free **Google Colab** GPU for faster execution. Go to Runtime -> Change Runtime Type -> Hardware Accelerator -> GPU -> Save
 
-# How to use Flask App
+# How to use the app using Falsk or Docker
 It's easy to install and run it on your computer.
 
 ```shell
@@ -31,9 +31,22 @@ $ pip install -r requirements.txt
 # 3. Run!
 $ python app.py
 ```
-Easily send requests similar to '''test_request.py''' file.
 
+Additionally, with **[Docker](https://www.docker.com)**, you can quickly build and run the entire application in minutes :whale:
 
+```shell
+# 1. First, clone the repo
+$ git clone https://github.com/mtobeiyf/keras-flask-deploy-webapp.git
+$ cd keras-flask-deploy-webapp
+
+# 2. Build Docker image
+$ docker build -t keras_flask_app .
+
+# 3. Run!
+$ docker run -it --rm -p 5000:5000 keras_flask_app
+```
+
+Then, easily send requests similar to `test_request.py` file.
 
 # Technical Concepts in Model development
 - **Data Loader**: Since all data couldn't be loaded into memory, data loaders from pytorch are used. A data loader combines a dataset and a sampler, and provides an iterable over the given dataset. 
