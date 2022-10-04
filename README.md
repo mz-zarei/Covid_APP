@@ -55,5 +55,8 @@ Then, easily send requests similar to `test_request.py` file.
 (Note that the lambda values are values with the [0, 1] range and are sampled from the Beta distribution.)
 - **Transfer Learning**: It is a popular approach in deep learning where pre-trained models are used as the starting point on computer vision and natural language processing tasks given the vast compute and time resources required to develop neural network models on these problems and from the huge jumps in skill that they provide on related problems.
 
+## Resources
+- Deploying pytorch in python via a RESR API with Falsk: https://pytorch.org/tutorials/intermediate/flask_rest_api_tutorial.html
+- Deploy Keras Model with Flask as Web App: https://github.com/imfing/keras-flask-deploy-webapp
 
 
