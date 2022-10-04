@@ -36,14 +36,14 @@ Additionally, with **[Docker](https://www.docker.com)**, you can quickly build a
 
 ```shell
 # 1. First, clone the repo
-$ git clone https://github.com/mtobeiyf/keras-flask-deploy-webapp.git
-$ cd keras-flask-deploy-webapp
+$ git clone https://github.com/mz-zarei/Covid_APP.git
+$ cd Covid_APP_main_folder
 
 # 2. Build Docker image
-$ docker build -t keras_flask_app .
+$ docker build -t Covid_APP .
 
 # 3. Run!
-$ docker run -it --rm -p 5000:5000 keras_flask_app
+$ docker run -it --rm -p 5000:5000 Covid_APP
 ```
 
 Then, easily send requests similar to `test_request.py` file.
